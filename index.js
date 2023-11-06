@@ -52,7 +52,7 @@ function fetchPatient(){
           })
           .then(response => response.json())
           .then(data => {
-            comsole.log(data)
+            console.log(data)
           })
         })
         
