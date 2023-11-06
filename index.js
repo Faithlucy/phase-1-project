@@ -44,18 +44,20 @@ function fetchPatient(){
             headers: {
               'Content-Type': 'application/json'
             },
-            body: JSON.stringify()
-
-            
-                
-                
-                
+            body: JSON.stringify(
+                {  name : `${first_name}`,
+                medicalHistory : `${medical_history}`,
+            }
+            )     
           })
           .then(response => response.json())
-          .then(data => console.log(data))
+          .then(data => {
+            comsole.log(data)
+          })
+        })
           .catch(error => console.error(error))
 
-    } )
+    
 
 
     
