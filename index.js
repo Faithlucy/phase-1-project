@@ -3,6 +3,12 @@ const inputSearch=document.getElementById("search")
 const searchButton=document.getElementById("searchbutton")
 const displaydetails=document.getElementById("display")
 
+inputSearch.addEventListener("keydown",
+function(e){
+    if (e.code=="Enter"){
+        fetchPatient()
+    }})
+
 fetch(baseURL)
 .then((response)=> response.json())
 .then((data)=>{
