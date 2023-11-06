@@ -55,7 +55,7 @@ function fetchPatient(){
             comsole.log(data)
           })
         })
-          .catch(error => console.error(error))
+        
 
     
 
