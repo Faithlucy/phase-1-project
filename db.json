@@ -4,9 +4,9 @@
         "first_name": "Benjamin",
         "last_name": "Hryniewicki",
         "gender": "Male",
-        "medical history": "Maternal care for cervical incompetence, third trimester",
-        "past medication": "Levetiracetam",
-        "family medical history": "heart disease"
+        "medical_history": "Maternal care for cervical incompetence, third trimester",
+        "past_medication": "Levetiracetam",
+        "family_medical_history": "heart disease"
     },
     {
         "id": 2,
