@@ -9,19 +9,30 @@ function(e){
         fetchPatient()
     }})
 
-fetch(baseURL)
-.then((response)=> response.json())
-.then((data)=>{
-    searchButton.addEventListener("click",
-    ()=>{
-        if(inputSearch.textContenT===data.first_name){
-            alert(`${data.name} found`)
-        }else{
-            alert('Patient not Found')
-        }
-    }
-        
-    )})
+searchButton.addEventListener('click',fetchPatient)
+
+function fetchPatient(){
+    fetch(`${baseURL}`)
+    .then((response)=> response.json())
+    .then((data)=>{
+        let patientName=""
+        data.forEach(element => {
+            if(element.name===inputSearch.value){
+                patientName=element.first_name
+            }else{
+                return "Patient not found"
+            }
+            const newp =displaydetails.createElement("p")
+            p.innerHTML=` ${patientName}`
+            document.append(newp)
+            
+
+
+    })
+    
+})
+
+}
 
     const submit= document.getElementById("submit")
     const patientname = document.getElementById("fname").value;
