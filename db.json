@@ -1,4 +1,4 @@
-[
+{"patients": [
     {
         "id": 1,
         "first_name": "Benjamin",
@@ -359,4 +359,4 @@
         "past medication": "Pramipexole Dihydrochloride",
         "family medical history": "flu"
     }
-]
+]}
